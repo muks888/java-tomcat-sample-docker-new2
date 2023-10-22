@@ -1,4 +1,4 @@
-FROM tomcat:8.0
+FROM public.ecr.aws/docker/library/tomcat:9.0
  
 ADD **/*.war /usr/local/tomcat/webapps
  
