@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Application') {
             steps {
-                sh 'mvn -f pom.xml clean package'
+                sh '/scratch/wcpbt/software/maven/apache-maven-3.9.4/bin/mvn -f pom.xml clean package'
             }
             post {
                 success {
